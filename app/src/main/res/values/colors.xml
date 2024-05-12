@@ -2,4 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="bar">#0522DC</color>
+    <color name="bl">#1014F6</color>
+    <color name="my_light_primary">#cddefd</color>
 </resources>

@@ -21,8 +21,8 @@
         android:layout_marginTop="20dp"
         android:fontFamily="@font/baloo_thambi"
         android:text="Add Note"
-        android:textColor="#203DF8"
-        android:textSize="35dp"
+        android:textColor="@color/bl"
+        android:textSize="40dp"
         android:textStyle="bold" />
 
     <ImageView
@@ -50,10 +50,10 @@
         android:ems="10"
         android:fontFamily="@font/baloo_bhai_2_medium"
         android:gravity="top"
+        android:hint="Add Title..."
         android:inputType="text"
         android:padding="12dp"
-        android:hint="Add Title..."
-        android:textColor="#85A6FA" />
+        android:textColor="?attr/colorOnPrimaryContainer" />
 
     <EditText
         android:id="@+id/contentEditText"

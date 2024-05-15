@@ -8,6 +8,25 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     >
+    <TextView
+        android:id="@+id/Notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/baloo_thambi"
+        android:textColor="#203DF8"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:layout_marginStart="20sp"
+        android:text="TextView" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/notesRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:padding="20dp"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/add_button"
@@ -17,11 +36,13 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="166dp"
         android:layout_marginTop="166dp"
-        android:layout_marginEnd="62dp"
-        android:layout_marginBottom="59dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="47dp"
         android:backgroundTint="@color/bar"
+        android:contentDescription="TODO"
         android:src="@drawable/baseline_add_24"
-        app:tint="@color/white"
-        android:contentDescription="TODO" />
+        app:tint="@color/white" />
+
+
 
 </RelativeLayout>

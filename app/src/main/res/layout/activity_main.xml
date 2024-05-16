@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back3"
+    android:background="@drawable/back7"
     tools:context=".MainActivity">
 
     <TextView
@@ -36,8 +36,8 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="166dp"
         android:layout_marginTop="166dp"
-        android:layout_marginEnd="27dp"
-        android:layout_marginBottom="112dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="51dp"
         android:backgroundTint="@color/bar"
         android:contentDescription="TODO"
         android:src="@drawable/baseline_add_24"

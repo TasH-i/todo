@@ -13,8 +13,8 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="150dp"
-        android:layout_height="55dp"
+        android:layout_width="220dp"
+        android:layout_height="47dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="20dp"
@@ -53,12 +53,12 @@
         android:hint="Add Title..."
         android:inputType="text"
         android:padding="12dp"
-        android:textColor="?attr/colorOnPrimaryContainer" />
+        android:textColor="#1E4FCF" />
 
     <EditText
         android:id="@+id/contentEditText"
         android:layout_width="340dp"
-        android:layout_height="552dp"
+        android:layout_height="572dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
@@ -69,8 +69,8 @@
         android:ems="10"
         android:fontFamily="@font/baloo_bhai_2_medium"
         android:gravity="top"
+        android:hint="Add Discription..."
         android:inputType="text"
         android:padding="12dp"
-        android:hint="Add Discription..."
-        android:textColor="#85A6FA" />
+        android:textColor="#5E82DF" />
 </RelativeLayout>

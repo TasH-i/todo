@@ -15,15 +15,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="20dp"
-       >
+        android:paddingTop="5dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="20dp"
 
+       >
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="5dp">
+            android:layout_height="43dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
 
 
             <TextView
@@ -35,15 +38,26 @@
                 android:textColor="@color/bl"
                 android:textSize="18dp"
                 android:textStyle="bold" />
-            
+
             <ImageView
                 android:id="@+id/updateButton"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:layout_alignParentEnd="true"
-                android:layout_marginEnd="30px"
-                android:src="@drawable/edit"
-                />
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/edit" />
+
+            <ImageView
+                android:id="@+id/deleteButton"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="25dp"
+                app:srcCompat="@drawable/close" />
 
         </RelativeLayout>
 
@@ -56,6 +70,7 @@
             android:maxLines="3"
             android:layout_marginTop="4dp"
             />
+
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>

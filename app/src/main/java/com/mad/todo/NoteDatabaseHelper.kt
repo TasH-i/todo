@@ -24,6 +24,7 @@ class NoteDatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_
     db?.execSQL(createTableQuery)
     }
 
+
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
     val dropTableQuery = "DROP TABLE IF EXISTS $TABLE_NAME"
         db?.execSQL(dropTableQuery)
@@ -84,6 +85,14 @@ class NoteDatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_
         cursor.close()
         db.close()
         return Note(id, title, content)
+    }
+
+    fun deleteNote(noteId:Int){
+        val db = writableDatabase
+        val whereClause = "$COLUMN_ID = ?"
+        val whereArgs = arrayOf(noteId.toString())
+        db.delete(TABLE_NAME,whereClause,whereArgs)
+        db.close()
     }
 
 }
